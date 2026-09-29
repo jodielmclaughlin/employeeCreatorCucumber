@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 19.30 s <<< FAILURE! -- in TestSuite
+runner.RunCucumberTest.runScenario["User accidentally clicks remove but doesnt want to remove employee", "Employee List"](6) -- Time elapsed: 2.585 s <<< FAILURE!
+java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertFalse(Assert.java:79)
+	at org.testng.Assert.assertFalse(Assert.java:89)
+	at steps.EmployeeListSteps.userShouldStillSeeEmployeeInEmployeeList(EmployeeListSteps.java:87)
+	at ✽.user should still see employee in employee list(file:///C:/Users/Jodie/OneDrive/Documents/nology/employeeCreator/ecCucumber/eccucumber/src/test/resources/features/employee_list.feature:30)
+
+runner.RunCucumberTest.runScenario["User wants to remove employee", "Employee List"](7) -- Time elapsed: 2.188 s <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at steps.EmployeeListSteps.userShouldSeeEmployeeIsDeleted(EmployeeListSteps.java:97)
+	at ✽.user should see employee is deleted(file:///C:/Users/Jodie/OneDrive/Documents/nology/employeeCreator/ecCucumber/eccucumber/src/test/resources/features/employee_list.feature:37)
+

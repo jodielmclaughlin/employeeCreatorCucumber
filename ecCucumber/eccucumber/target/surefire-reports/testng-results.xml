@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-09-29T17:20:27 BST" name="Surefire suite" finished-at="2026-09-29T17:20:45 BST" duration-ms="18304">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-09-29T17:20:27 BST" name="Surefire test" finished-at="2026-09-29T17:20:45 BST" duration-ms="18304">
+      <class name="runner.RunCucumberTest">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:27 BST" name="setUpClass" finished-at="2026-09-29T17:20:28 BST" duration-ms="1013" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@75a0c890]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:28 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-29T17:20:33 BST" duration-ms="4726" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All employees are displayed"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employee List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:33 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-29T17:20:34 BST" duration-ms="1792" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["All employees details are displayed correctly"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employee List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:34 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-29T17:20:36 BST" duration-ms="1719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be directed to add employee page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employee List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:36 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-29T17:20:38 BST" duration-ms="2077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should be directed to edit employee page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employee List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:38 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-29T17:20:40 BST" duration-ms="1972" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should see remove employee pop up"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employee List"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:40 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-29T17:20:43 BST" duration-ms="2581" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User accidentally clicks remove but doesnt want to remove employee"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employee List"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [false] but found [true]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertFalse(Assert.java:79)
+at org.testng.Assert.assertFalse(Assert.java:89)
+at steps.EmployeeListSteps.userShouldStillSeeEmployeeInEmployeeList(EmployeeListSteps.java:87)
+at ✽.user should still see employee in employee list(file:///C:/Users/Jodie/OneDrive/Documents/nology/employeeCreator/ecCucumber/eccucumber/src/test/resources/features/employee_list.feature:30)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:43 BST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-09-29T17:20:45 BST" duration-ms="2188" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User wants to remove employee"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Employee List"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at steps.EmployeeListSteps.userShouldSeeEmployeeIsDeleted(EmployeeListSteps.java:97)
+at ✽.user should see employee is deleted(file:///C:/Users/Jodie/OneDrive/Documents/nology/employeeCreator/ecCucumber/eccucumber/src/test/resources/features/employee_list.feature:37)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.RunCucumberTest@6a28ffa4]" started-at="2026-09-29T17:20:45 BST" name="tearDownClass" finished-at="2026-09-29T17:20:45 BST" duration-ms="159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.RunCucumberTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
