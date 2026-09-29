@@ -43,8 +43,9 @@ public class EmployeeListPage extends BasePage{
         return By.cssSelector("[data-testid='delete-employee-" + employeeId + "']");
     }
 
-    public void clickEditEmployee(int employeeId) {
+    public EditEmployeePage clickEditEmployee(int employeeId) {
         click(editButton(employeeId));
+        return new EditEmployeePage(driver);
     }
 
     public void clickRemoveEmployee(int employeeId) {
@@ -54,8 +55,9 @@ public class EmployeeListPage extends BasePage{
         return By.cssSelector("[data-testid='employee-card-" + employeeId + "']");
     }
 
-    public void clickAddEmployeeButton(){
+    public AddEmployeePage clickAddEmployeeButton(){
         click(addEmployeeButton);
+        return new AddEmployeePage(driver);
     }
     public WebElement getRemovePopUp(){
         return waitForVisible(removePopUp);
