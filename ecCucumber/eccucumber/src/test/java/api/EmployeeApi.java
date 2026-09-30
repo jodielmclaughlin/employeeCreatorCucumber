@@ -22,7 +22,7 @@ public class EmployeeApi {
                 "firstName": "Delete",
                 "lastName": "Test",
                 "email": "delete.test@example.com",
-                "phoneNumber": "07123456789",
+                "phoneNumber": "07287598827",
                 "address": "1 Test Street",
                 "contractType": "FULL_TIME",
                 "jobTitle": "Test Employee",

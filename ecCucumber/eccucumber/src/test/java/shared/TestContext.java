@@ -9,6 +9,8 @@ public class TestContext {
     
     private WebDriver driver;
     private Long testEmployeeId;
+    private String testEmployeeEmail;
+    private String testEmployeePhoneNumber;
 
     public void startDriver(){
         driver = WebDriverFactory.createWebDriver(ConfigReader.browser());
@@ -30,5 +32,21 @@ public class TestContext {
 
     public void setTestEmployeeId(Long testEmployeeId) {
         this.testEmployeeId = testEmployeeId;
+    }
+
+    public String getTestEmployeeEmail() {
+        return testEmployeeEmail;
+    }
+
+    public void setTestEmployeeEmail(String testEmployeeEmail) {
+        this.testEmployeeEmail = testEmployeeEmail;
+    }
+
+    public String getTestEmployeePhoneNumber() {
+        return testEmployeePhoneNumber;
+    }
+
+    public void setTestEmployeePhoneNumber(String testEmployeePhoneNumber) {
+        this.testEmployeePhoneNumber = testEmployeePhoneNumber;
     }
 }

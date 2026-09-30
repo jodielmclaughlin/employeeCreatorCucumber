@@ -3,6 +3,7 @@ package pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -72,13 +73,24 @@ public class EmployeeListPage extends BasePage{
         waitForVisible(removePopUp);
         click(rmPopUpRemoveButton);
     }
-    
+
     public String getRemoveEmployeeConfirmation(){
         return textOf(removeEmployeeConfirmation);
     }
 
     public boolean isEmployeeCardNotDisplayed(int employeeId) {
         return driver.findElements(getEmployeeCard(employeeId)).isEmpty();
+    }
+
+    public boolean isEmployeeDisplayedByEmail(String email){
+        By employeeEmail = By.xpath("//p[normalize-space()='" + email + "']");
+
+        try {
+            waitForVisible(employeeEmail);
+            return true;
+        } catch (TimeoutException e) {
+            return false;
+        }
     }
 
     public void refreshPage() {
