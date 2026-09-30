@@ -72,10 +72,16 @@ public class EmployeeListPage extends BasePage{
         waitForVisible(removePopUp);
         click(rmPopUpRemoveButton);
     }
+    
     public String getRemoveEmployeeConfirmation(){
         return textOf(removeEmployeeConfirmation);
     }
+
     public boolean isEmployeeCardNotDisplayed(int employeeId) {
-    return driver.findElements(getEmployeeCard(employeeId)).isEmpty();
-}
+        return driver.findElements(getEmployeeCard(employeeId)).isEmpty();
+    }
+
+    public void refreshPage() {
+        driver.navigate().refresh();
+    }
 }

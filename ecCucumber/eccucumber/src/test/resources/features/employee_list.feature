@@ -31,7 +31,8 @@ Feature: Employee List
 
 
     Scenario: User wants to remove employee
-    When user clicks remove button
+    Given a test employee exists
+    When user clicks remove button for the test employee
     Then user should see remove employee pop up
     When user clicks confirm Remove
     Then user should see employee is deleted

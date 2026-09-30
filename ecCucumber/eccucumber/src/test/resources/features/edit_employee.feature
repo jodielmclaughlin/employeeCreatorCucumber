@@ -1,4 +1,4 @@
-Feature: Edit employee
+# Feature: Edit employee
 
-    Background:
-        Given user is on the edit employee page
+#     Background:
+#         Given user is on the edit employee page

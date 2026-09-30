@@ -2,6 +2,7 @@ package steps;
 
 import org.testng.Assert;
 
+import api.EmployeeApi;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -24,6 +25,17 @@ public class EmployeeListSteps {
     @Given("user is on the employee list page")
     public void userIsOnEmployeeListPage(){
         employeeListPage = new EmployeeListPage(context.getDriver());
+    }
+
+    @Given("a test employee exists")
+    public void aTestEmployeeExists() throws Exception {
+
+        EmployeeApi employeeApi = new EmployeeApi();
+
+        Long employeeId = employeeApi.createTestEmployee();
+
+        context.setTestEmployeeId(employeeId);
+        employeeListPage.refreshPage();
     }
 
     @When("page loads")
@@ -66,8 +78,9 @@ public class EmployeeListSteps {
 
     @When("user clicks remove button")
     public void userClicksRemoveButton() {
-        employeeListPage.clickRemoveEmployee(269);
+        employeeListPage.clickRemoveEmployee(250);
     }
+
 
     @Then("user should see remove employee pop up")
     public void userShouldSeeRemoveEmployeePopUp() {
@@ -81,9 +94,14 @@ public class EmployeeListSteps {
 
     @Then("user should still see employee in employee list")
     public void userShouldStillSeeEmployeeInEmployeeList() {
-        employeeListPage.getEmployeeCard(269);
-        Assert.assertTrue(employeeListPage.getEmployeeDetails(269).contains("Lacy"));
-        Assert.assertFalse(employeeListPage.isEmployeeCardNotDisplayed(269));
+        employeeListPage.getEmployeeCard(250);
+        Assert.assertTrue(employeeListPage.getEmployeeDetails(250).contains("Tammara"));
+        Assert.assertFalse(employeeListPage.isEmployeeCardNotDisplayed(250));
+    }
+    @When("user clicks remove button for the test employee")
+    public void userClicksRemoveButtonForTestEmployee() {
+
+        employeeListPage.clickRemoveEmployee(context.getTestEmployeeId().intValue());
     }
 
     @When("user clicks confirm Remove")
@@ -93,6 +111,9 @@ public class EmployeeListSteps {
 
     @Then("user should see employee is deleted")
     public void userShouldSeeEmployeeIsDeleted() {
+        
         Assert.assertTrue(employeeListPage.getRemoveEmployeeConfirmation().contains("has been removed"));
+        employeeListPage.refreshPage();
+        Assert.assertTrue(employeeListPage.isEmployeeCardNotDisplayed(context.getTestEmployeeId().intValue()));
     }
 }
