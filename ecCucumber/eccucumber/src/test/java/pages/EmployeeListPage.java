@@ -16,6 +16,9 @@ public class EmployeeListPage extends BasePage{
     public By rmPopUpRemoveButton = By.cssSelector("[data-testid='confirm-delete-button']");
     public By employeeCards = By.cssSelector("[data-testid^='employee-card-']");
     public By removeEmployeeConfirmation = By.cssSelector("[data-testid='employee-message']");
+    public By homeButton = By.cssSelector("[data-testid='home-button']");
+    public By loginButton = By.cssSelector("[data-testid='login-button']");
+    public By logoutButton = By.cssSelector("[data-testid='logout-button']");
 
 
     public EmployeeListPage(WebDriver driver) {
@@ -29,6 +32,10 @@ public class EmployeeListPage extends BasePage{
     public List<WebElement> getAllEmployeeCards(){
         return waitForAllVisible(employeeCards);
     }
+    public List<WebElement> checkIfEmployeeCardsArePresent(){
+        return checkIfElementIsPresent(employeeCards);
+    }
+
 
     public String getEmployeeDetails(long employeeId){
         return waitForVisible(getEmployeeCard(employeeId)).getText();
@@ -38,6 +45,22 @@ public class EmployeeListPage extends BasePage{
         return By.cssSelector(
             "[data-testid='edit-employee-" + employeeId + "']"
         );
+    }
+
+    public WebElement getEditButton(int employeeId) {
+        return waitForVisible(By.cssSelector(
+                "[data-testid='edit-employee-" + employeeId + "']")
+        );
+    }
+    public WebElement getRemoveButton(int employeeId) {
+        return waitForVisible(By.cssSelector(
+                "[data-testid='delete-employee-" + employeeId + "']")
+        );
+    }
+
+    public WebElement getAddButton() {
+        return waitForVisible(addEmployeeButton);
+
     }
 
     public By removeButton(int employeeId) {
@@ -95,5 +118,19 @@ public class EmployeeListPage extends BasePage{
 
     public void refreshPage() {
         driver.navigate().refresh();
+    }
+
+    public LoginPage clickLogoutButton(){
+        click(logoutButton);
+        return new LoginPage(driver);
+    }
+    public LoginPage clickLoginButton(){
+        click(loginButton);
+        return new LoginPage(driver);
+    }
+
+    public EmployeeListPage clickHomeButton(){
+        click(homeButton);
+        return new EmployeeListPage(driver);
     }
 }

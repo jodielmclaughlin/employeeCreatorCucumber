@@ -5,8 +5,11 @@ C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\s
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\pages\BasePage.java
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\pages\EditEmployeePage.java
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\pages\EmployeeListPage.java
+C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\pages\LoginPage.java
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\runner\RunCucumberTest.java
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\shared\Hooks.java
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\shared\TestContext.java
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\steps\AddEmployeeSteps.java
+C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\steps\EditEmployeeSteps.java
 C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\steps\EmployeeListSteps.java
+C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\src\test\java\steps\LoginSteps.java

@@ -1,7 +1,9 @@
 pages\BasePage.class
+steps\LoginSteps.class
 config\WebDriverFactory.class
 shared\TestContext.class
 pages\AddEmployeePage.class
+pages\LoginPage.class
 config\ConfigReader.class
 runner\RunCucumberTest.class
 shared\Hooks.class

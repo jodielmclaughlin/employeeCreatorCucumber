@@ -26,6 +26,11 @@ public class BasePage {
         
     }
 
+    public List<WebElement>  checkIfElementIsPresent(By locator){
+        List<WebElement> elements = driver.findElements(locator);
+        return elements;
+    }
+
     public List<WebElement> waitForAllVisible(By locator){
         return wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locator));
     }

@@ -13,15 +13,17 @@ public class AddEmployeeSteps {
     
     private final TestContext context;
     private AddEmployeePage addEmployeePage;
-    private EmployeeListPage employeeListPage;
-    
+
     public AddEmployeeSteps(TestContext context) {
         this.context = context;
     }
 
-    @Given("user is on the add employee page")
+    @Given("user logged in as admin and is on the add employee page")
      public void userIsOnTheAddEmployeePage(){
-        addEmployeePage = new EmployeeListPage(context.getDriver()).clickAddEmployeeButton();
+        addEmployeePage = new EmployeeListPage(context.getDriver())
+                .clickLoginButton()
+                .successfullyLoginAsAdmin()
+                .clickAddEmployeeButton();
      }
 
      @When("user inputs employee details incorrectly")
@@ -58,8 +60,8 @@ public class AddEmployeeSteps {
 
      @Then("user should see new employee on employee list page")
      public void userShouldSeeNewEmployeeOnEmployeeListPage(){
-        employeeListPage = new EmployeeListPage(context.getDriver());
-        Assert.assertTrue(employeeListPage.isEmployeeDisplayedByEmail(context.getTestEmployeeEmail()));
+         EmployeeListPage employeeListPage = new EmployeeListPage(context.getDriver());
+         Assert.assertTrue(employeeListPage.isEmployeeDisplayedByEmail(context.getTestEmployeeEmail()));
      }
     
 }

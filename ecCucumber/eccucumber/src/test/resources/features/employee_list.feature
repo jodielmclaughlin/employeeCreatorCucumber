@@ -1,40 +1,32 @@
 Feature: Employee List
 
     Background:
-        Given user is on the employee list page
+        Given user is logged in as an employee and on the employee list page
+
+    Scenario: No employees are displayed
+    When user logs out
+    And user goes to home page
+    Then user should not see any employees
 
     Scenario: All employees are displayed
     When page loads
     Then user should see all employees
 
     Scenario: All employees details are displayed correctly
+    Given a test editing employee exists
     When page loads
     Then user should see employee details displayed correctly
 
-    Scenario: User should be directed to add employee page
-    When user clicks add employee button
-    Then user should be directed to add employee page
+    Scenario: Edit Employee button should be disabled
+    Given a test editing employee exists
+    Then user should see Edit button is disabled
 
-    Scenario: User should be directed to edit employee page
-    When user clicks edit button
-    Then user should be directed to edit employee page
+    Scenario: Add Employee button should be disabled
+    Given a test edit employee exists
+    Then user should see Add Employee button is disabled
 
-    Scenario: User should see remove employee pop up
-    When user clicks remove button
-    Then user should see remove employee pop up
-
-    Scenario: User accidentally clicks remove but doesnt want to remove employee
-    When user clicks remove button
-    Then user should see remove employee pop up
-    And user clicks cancel
-    Then user should still see employee in employee list
-
-
-    Scenario: User wants to remove employee
+    Scenario: Remove Employee button should be disabled
     Given a test employee exists
-    When user clicks remove button for the test employee
-    Then user should see remove employee pop up
-    When user clicks confirm Remove
-    Then user should see employee is deleted
+    Then user should see Remove Employee button is disabled
 
 

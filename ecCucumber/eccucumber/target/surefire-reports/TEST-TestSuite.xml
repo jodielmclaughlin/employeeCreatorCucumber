@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="22.034" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="TestSuite" time="57.43" tests="19" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="17"/>
+    <property name="java.specification.version" value="25"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.class.path" value="C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\target\test-classes;C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\target\classes;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-java\4.49.0\selenium-java-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-api\4.49.0\selenium-api-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.49.0\selenium-chrome-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.49.0\selenium-chromium-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-json\4.49.0\selenium-json-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.49.0\selenium-manager-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.49.0\selenium-devtools-latest-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.49.0\selenium-devtools-v151-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v152\4.49.0\selenium-devtools-v152-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v153\4.49.0\selenium-devtools-v153-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.49.0\selenium-edge-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.49.0\selenium-firefox-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-http\4.49.0\selenium-http-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.49.0\selenium-ie-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.49.0\selenium-remote-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\com\google\guava\guava\33.7.1-jre\guava-33.7.1-jre.jar;C:\Users\Jodie\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Jodie\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Jodie\.m2\repository\com\google\errorprone\error_prone_annotations\2.50.0\error_prone_annotations-2.50.0.jar;C:\Users\Jodie\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\Jodie\.m2\repository\net\bytebuddy\byte-buddy\1.18.13\byte-buddy-1.18.13.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-os\4.49.0\selenium-os-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.49.0\selenium-safari-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-support\4.49.0\selenium-support-4.49.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-java\7.34.2\cucumber-java-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-core\7.34.2\cucumber-core-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-gherkin\7.34.2\cucumber-gherkin-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.2\cucumber-gherkin-messages-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\messages-ndjson\0.3.0\messages-ndjson-0.3.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\Jodie\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\datatable\7.34.2\datatable-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-plugin\7.34.2\cucumber-plugin-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\docstring\7.34.2\docstring-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\Jodie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-testng\7.34.2\cucumber-testng-7.34.2.jar;C:\Users\Jodie\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Jodie\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Jodie\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Jodie\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Jodie\.m2\repository\io\github\cdimascio\dotenv-java\3.0.0\dotenv-java-3.0.0.jar;C:\Users\Jodie\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.0\jackson-databind-2.20.0.jar;C:\Users\Jodie\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\Jodie\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.0\jackson-core-2.20.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-picocontainer\7.34.8\cucumber-picocontainer-7.34.8.jar;C:\Users\Jodie\.m2\repository\org\picocontainer\picocontainer\2.15.2\picocontainer-2.15.2.jar;"/>
@@ -11,11 +11,11 @@
     <property name="java.vendor.url" value="https://adoptium.net/"/>
     <property name="user.timezone" value="Europe/London"/>
     <property name="os.name" value="Windows 10"/>
-    <property name="java.vm.specification.version" value="17"/>
+    <property name="java.vm.specification.version" value="25"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin"/>
-    <property name="sun.java.command" value="C:\Users\Jodie\AppData\Local\Temp\surefire3506851087107234839\surefirebooter-20260930124909657_3.jar C:\Users\Jodie\AppData\Local\Temp\surefire3506851087107234839 2026-09-30T12-49-09_424-jvmRun1 surefire-20260930124909657_1tmp surefire_0-20260930124909657_2tmp"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Jodie\AppData\Local\Temp\surefire1287191058166386101\surefirebooter-20261008170348487_3.jar C:\Users\Jodie\AppData\Local\Temp\surefire1287191058166386101 2026-10-08T17-03-48_235-jvmRun1 surefire-20261008170348487_1tmp surefire_0-20261008170348487_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\target\test-classes;C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber\target\classes;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-java\4.49.0\selenium-java-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-api\4.49.0\selenium-api-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\jspecify\jspecify\1.0.1\jspecify-1.0.1.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.49.0\selenium-chrome-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.49.0\selenium-chromium-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-json\4.49.0\selenium-json-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.49.0\selenium-manager-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.49.0\selenium-devtools-latest-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v151\4.49.0\selenium-devtools-v151-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v152\4.49.0\selenium-devtools-v152-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v153\4.49.0\selenium-devtools-v153-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.49.0\selenium-edge-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.49.0\selenium-firefox-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-http\4.49.0\selenium-http-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.49.0\selenium-ie-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.49.0\selenium-remote-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\com\google\guava\guava\33.7.1-jre\guava-33.7.1-jre.jar;C:\Users\Jodie\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\Jodie\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Jodie\.m2\repository\com\google\errorprone\error_prone_annotations\2.50.0\error_prone_annotations-2.50.0.jar;C:\Users\Jodie\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-api\1.65.0\opentelemetry-api-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-context\1.65.0\opentelemetry-context-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-common\1.65.0\opentelemetry-common-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.65.0\opentelemetry-exporter-logging-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.65.0\opentelemetry-sdk-common-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.65.0\opentelemetry-sdk-extension-autoconfigure-spi-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.65.0\opentelemetry-sdk-extension-autoconfigure-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.65.0\opentelemetry-sdk-trace-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.65.0\opentelemetry-sdk-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.65.0\opentelemetry-sdk-metrics-1.65.0.jar;C:\Users\Jodie\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.65.0\opentelemetry-sdk-logs-1.65.0.jar;C:\Users\Jodie\.m2\repository\net\bytebuddy\byte-buddy\1.18.13\byte-buddy-1.18.13.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-os\4.49.0\selenium-os-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.49.0\selenium-safari-driver-4.49.0.jar;C:\Users\Jodie\.m2\repository\org\seleniumhq\selenium\selenium-support\4.49.0\selenium-support-4.49.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-java\7.34.2\cucumber-java-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-core\7.34.2\cucumber-core-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-gherkin\7.34.2\cucumber-gherkin-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.34.2\cucumber-gherkin-messages-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\gherkin\36.1.0\gherkin-36.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\messages-ndjson\0.3.0\messages-ndjson-0.3.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\pretty-formatter\2.4.1\pretty-formatter-2.4.1.jar;C:\Users\Jodie\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\tag-expressions\8.1.0\tag-expressions-8.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-expressions\18.1.0\cucumber-expressions-18.1.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.2\cucumber-json-formatter-0.3.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\datatable\7.34.2\datatable-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-plugin\7.34.2\cucumber-plugin-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\docstring\7.34.2\docstring-7.34.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\html-formatter\22.3.0\html-formatter-22.3.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\junit-xml-formatter\0.11.0\junit-xml-formatter-0.11.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\Jodie\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-testng\7.34.2\cucumber-testng-7.34.2.jar;C:\Users\Jodie\.m2\repository\org\testng\testng\7.12.0\testng-7.12.0.jar;C:\Users\Jodie\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\Jodie\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\Jodie\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Jodie\.m2\repository\io\github\cdimascio\dotenv-java\3.0.0\dotenv-java-3.0.0.jar;C:\Users\Jodie\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.0\jackson-databind-2.20.0.jar;C:\Users\Jodie\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\Jodie\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.0\jackson-core-2.20.0.jar;C:\Users\Jodie\.m2\repository\io\cucumber\cucumber-picocontainer\7.34.8\cucumber-picocontainer-7.34.8.jar;C:\Users\Jodie\.m2\repository\org\picocontainer\picocontainer\2.15.2\picocontainer-2.15.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -23,53 +23,141 @@
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2026-08-18"/>
-    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot"/>
     <property name="file.separator" value="\"/>
     <property name="basedir" value="C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Jodie\AppData\Local\Temp\surefire3506851087107234839\surefirebooter-20260930124909657_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Jodie\AppData\Local\Temp\surefire1287191058166386101\surefirebooter-20261008170348487_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="17.0.20.1+1"/>
+    <property name="java.runtime.version" value="25.0.4.1+1-LTS"/>
     <property name="user.name" value="Jodie"/>
+    <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="file.encoding" value="Cp1252"/>
+    <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="java.vendor.version" value="Temurin-17.0.20.1+1"/>
+    <property name="java.vendor.version" value="Temurin-25.0.4.1+1"/>
     <property name="localRepository" value="C:\Users\Jodie\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="C:\Users\Jodie\AppData\Local\Temp\"/>
-    <property name="java.version" value="17.0.20.1"/>
+    <property name="java.version" value="25.0.4.1"/>
     <property name="user.dir" value="C:\Users\Jodie\OneDrive\Documents\nology\employeeCreator\ecCucumber\eccucumber"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\PowerShell\7;c:\Users\Jodie\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand;c:\Users\Jodie\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\copilotCli;C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Jodie\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\PowerShell\7\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jodie\AppData\Local\Microsoft\WindowsApps;C:\Users\Jodie\.dotnet\tools;C:\Users\Jodie\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Tools\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;;."/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-25.0.4.101-hotspot\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\NVIDIA Corporation\NVIDIA App\NvDLISR;C:\ProgramData\chocolatey\bin;C:\Program Files\Git\cmd;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\Roslyn;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Jodie\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Program Files\Microsoft SQL Server\170\Tools\Binn\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\PowerShell\7\;C:\Program Files\WSL\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Jodie\AppData\Local\Microsoft\WindowsApps;C:\Users\Jodie\.dotnet\tools;C:\Users\Jodie\AppData\Local\nvm;C:\nvm4w\nodejs;C:\Tools\apache-maven-3.9.16-bin\apache-maven-3.9.16\bin;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.3\bin;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Eclipse Adoptium"/>
-    <property name="java.vm.version" value="17.0.20.1+1"/>
-    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="java.vm.version" value="25.0.4.1+1-LTS"/>
+    <property name="stdin.encoding" value="Cp1252"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="61.0"/>
+    <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="runScenario[&quot;user tries to add employee unsuccessfully&quot;, &quot;Add Employee&quot;](1)" classname="runner.RunCucumberTest" time="3.973">
+  <testcase name="runScenario[&quot;user tries to add employee unsuccessfully&quot;, &quot;Add Employee&quot;](1)" classname="runner.RunCucumberTest" time="5.959">
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+Oct 08, 2026 5:03:53 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;user successfully adds employee&quot;, &quot;Add Employee&quot;](2)" classname="runner.RunCucumberTest" time="2.722"/>
-  <testcase name="runScenario[&quot;All employees are displayed&quot;, &quot;Employee List&quot;](3)" classname="runner.RunCucumberTest" time="1.915"/>
-  <testcase name="runScenario[&quot;All employees details are displayed correctly&quot;, &quot;Employee List&quot;](4)" classname="runner.RunCucumberTest" time="1.678"/>
-  <testcase name="runScenario[&quot;User should be directed to add employee page&quot;, &quot;Employee List&quot;](5)" classname="runner.RunCucumberTest" time="1.704"/>
-  <testcase name="runScenario[&quot;User should be directed to edit employee page&quot;, &quot;Employee List&quot;](6)" classname="runner.RunCucumberTest" time="1.811"/>
-  <testcase name="runScenario[&quot;User should see remove employee pop up&quot;, &quot;Employee List&quot;](7)" classname="runner.RunCucumberTest" time="2.099"/>
-  <testcase name="runScenario[&quot;User accidentally clicks remove but doesnt want to remove employee&quot;, &quot;Employee List&quot;](8)" classname="runner.RunCucumberTest" time="2.004"/>
-  <testcase name="runScenario[&quot;User wants to remove employee&quot;, &quot;Employee List&quot;](9)" classname="runner.RunCucumberTest" time="2.674"/>
+  <testcase name="runScenario[&quot;user successfully adds employee&quot;, &quot;Add Employee&quot;](2)" classname="runner.RunCucumberTest" time="4.488">
+    <system-err><![CDATA[Oct 08, 2026 5:03:56 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;user should see employee details prefilled on edit page&quot;, &quot;Edit employee&quot;](3)" classname="runner.RunCucumberTest" time="4.457">
+    <system-err><![CDATA[Oct 08, 2026 5:04:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;user tries to edit employee unsuccessfully&quot;, &quot;Edit employee&quot;](4)" classname="runner.RunCucumberTest" time="3.249">
+    <system-err><![CDATA[Oct 08, 2026 5:04:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;user successfully edits employee&quot;, &quot;Edit employee&quot;](5)" classname="runner.RunCucumberTest" time="3.755">
+    <system-err><![CDATA[Oct 08, 2026 5:04:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;No employees are displayed&quot;, &quot;Employee List&quot;](6)" classname="runner.RunCucumberTest" time="2.542">
+    <system-err><![CDATA[Oct 08, 2026 5:04:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;All employees are displayed&quot;, &quot;Employee List&quot;](7)" classname="runner.RunCucumberTest" time="2.521">
+    <system-err><![CDATA[Oct 08, 2026 5:04:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;All employees details are displayed correctly&quot;, &quot;Employee List&quot;](8)" classname="runner.RunCucumberTest" time="2.467">
+    <system-err><![CDATA[Oct 08, 2026 5:04:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Edit Employee button should be disabled&quot;, &quot;Employee List&quot;](9)" classname="runner.RunCucumberTest" time="2.5">
+    <system-err><![CDATA[Oct 08, 2026 5:04:20 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Add Employee button should be disabled&quot;, &quot;Employee List&quot;](10)" classname="runner.RunCucumberTest" time="2.458">
+    <system-err><![CDATA[Oct 08, 2026 5:04:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Remove Employee button should be disabled&quot;, &quot;Employee List&quot;](11)" classname="runner.RunCucumberTest" time="2.186">
+    <system-err><![CDATA[Oct 08, 2026 5:04:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User should be directed to add employee page&quot;, &quot;Employee List&quot;](12)" classname="runner.RunCucumberTest" time="2.671">
+    <system-err><![CDATA[Oct 08, 2026 5:04:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User should be directed to edit employee page&quot;, &quot;Employee List&quot;](13)" classname="runner.RunCucumberTest" time="2.341">
+    <system-err><![CDATA[Oct 08, 2026 5:04:30 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User should see remove employee pop up&quot;, &quot;Employee List&quot;](14)" classname="runner.RunCucumberTest" time="2.36">
+    <system-err><![CDATA[Oct 08, 2026 5:04:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User accidentally clicks remove but doesnt want to remove employee&quot;, &quot;Employee List&quot;](15)" classname="runner.RunCucumberTest" time="2.301">
+    <system-err><![CDATA[Oct 08, 2026 5:04:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;User wants to remove employee&quot;, &quot;Employee List&quot;](16)" classname="runner.RunCucumberTest" time="3.049">
+    <system-err><![CDATA[Oct 08, 2026 5:04:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Successful Login&quot;, &quot;Login&quot;](17)" classname="runner.RunCucumberTest" time="1.807">
+    <system-out><![CDATA[http://localhost:5173/#/
+]]></system-out>
+    <system-err><![CDATA[Oct 08, 2026 5:04:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with incorrect password&quot;, &quot;Login&quot;](18)" classname="runner.RunCucumberTest" time="2.621">
+    <system-err><![CDATA[Oct 08, 2026 5:04:42 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
+  <testcase name="runScenario[&quot;Login with incorrect email and password&quot;, &quot;Login&quot;](19)" classname="runner.RunCucumberTest" time="2.333">
+    <system-err><![CDATA[Oct 08, 2026 5:04:44 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 154, returning the closest version; found: 153; Please update to a Selenium version that supports CDP version 154
+]]></system-err>
+  </testcase>
 </testsuite>
