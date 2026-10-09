@@ -12,6 +12,21 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    services:
+      mysql:
+        image: mysql:8.4
+        env:
+          MYSQL_ROOT_PASSWORD: ${{ secrets.DB_PASSWORD}}
+          MYSQL_DATABASE: ${{ secrets.DB_TEST_NAME}}
+        ports:
+          - 3306:3306
+        options: >- 
+          --health-cmd="mysqladmin ping -h 127.0.0.1 -prootpassword"
+          --health-interval=10s 
+          --health-timeout=5s 
+          --health-retries=10
+
     defaults:
       run:
         working-directory: ecCucumber/eccucumber
@@ -19,12 +34,78 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Checkout backend
+        uses: actions/checkout@v4
+        with:
+          repository: jodielmclaughlin/EmployeeCreatorProject
+          path: backend
+
+      - name: Checkout frontend
+        uses: actions/checkout@v4
+        with:
+          repository: jodielmclaughlin/EmployeeCreatorProject
+          path: frontend
+
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: "17"
           cache: maven
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: employee_creator_frontend/package-lock.json
+
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@v2
+
+      - name: Install frontend dependencies
+        working-directory: employee_creator_frontend
+        run: npm ci
+
+      - name: Start backend
+        working-directory: src
+        env:
+          SPRING_PROFILES_ACTIVE: test
+          SPRING_PROFILE: test
+          SPRING_DATASOURCE_URL: jdbc:mysql://${{secrets.DB_HOST}}:${{secrets.DB_PORT}}/${{secrets.DB_TEST_NAME}}?createDatabaseIfNotExist=true
+          SPRING_DATASOURCE_USERNAME: ${{ secrets.DB_USER}}
+          SPRING_DATASOURCE_PASSWORD: ${{ secrets.DB_PASSWORD}}
+        run: |
+            nohup mvn spring-boot:run > /tmp/backend.log 2>&1 &
+            
+            for i in {1..60}; do
+              if (echo > /dev/tcp/127.0.0.1/8080) >/dev/null 2>&1; then
+                echo "Backend is accepting connections"
+                exit 0
+              fi
+              sleep 2
+            done
+            
+            cat /tmp/backend.log
+            echo "Backend failed to start"
+            exit 1
+
+      - name: Start frontend
+        working-directory: employee_creator_frontend
+        run: | 
+          nohup npm run dev -- --host 0.0.0.0 > /tmp/frontend.log 2>&1 & 
+          
+          for i in {1..30}; do 
+            if curl -fsS http://localhost:5173/ > /dev/null; then
+              echo "Frontend is ready" 
+              exit 0 
+            fi 
+            sleep 2 
+          done 
+          
+          cat /tmp/frontend.log 
+          echo "Frontend failed to start" 
+          exit 1
 
       - name: Run cucumber tests
         env:
