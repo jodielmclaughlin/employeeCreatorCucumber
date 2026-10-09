@@ -62,7 +62,7 @@ jobs:
         run: npm ci
 
       - name: Start backend
-        working-directory: EmployeeCreatorProject/src
+        working-directory: EmployeeCreatorProject
         env:
           SPRING_PROFILES_ACTIVE: test
           SPRING_PROFILE: test
