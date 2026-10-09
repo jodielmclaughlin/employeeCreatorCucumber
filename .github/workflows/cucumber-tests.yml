@@ -69,6 +69,7 @@ jobs:
           SPRING_DATASOURCE_URL: jdbc:mysql://127.0.0.1:3306/employeecreator_september26_test
           SPRING_DATASOURCE_USERNAME: root
           SPRING_DATASOURCE_PASSWORD: rootpassword
+          JWT_SECRET: ${{ secrets.JWT_SECRET }}
         run: |
             nohup mvn spring-boot:run > /tmp/backend.log 2>&1 &
             
