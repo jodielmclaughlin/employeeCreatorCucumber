@@ -14,6 +14,7 @@ public class WebDriverFactory {
     switch(browser.toLowerCase()){
         case "chrome":
             ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless=new");
             options.addArguments("--no-sandbox");
             options.addArguments("--disable-dev-shm-usage");
             Map<String, Object> prefs = new HashMap<>();
