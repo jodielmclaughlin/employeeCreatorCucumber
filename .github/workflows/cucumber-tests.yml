@@ -37,6 +37,6 @@ jobs:
         uses: dorny/test-reporter@v1
         with:
           name: Cucumber Test Results
-          path: "target/surefire-reports/junitreports/*.xml"
+          path: "ecCucumber/eccucumber/target/surefire-reports/junitreports/*.xml"
           reporter: java-junit
           fail-on-error: false
