@@ -23,8 +23,9 @@ public class EditEmployeePage extends BasePage{
         super(driver);
     }
 
-    public void clickSaveChangesButton(){
+    public EmployeeListPage clickSaveChangesButton(){
         click(saveChangesButton);
+        return new EmployeeListPage(driver);
     }
 
     public void enterStartDate(String string){

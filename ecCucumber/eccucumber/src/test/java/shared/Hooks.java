@@ -24,7 +24,6 @@ public class Hooks {
     public void setup(Scenario scenario) throws Exception{
         context.startDriver();
         if(scenario.getSourceTagNames().contains("@admin")){
-            System.out.println("Logging in as admin");
 
             String token = authApi.login(
                     ConfigReader.adminEmail(),
@@ -32,14 +31,12 @@ public class Hooks {
             );
             context.authenticateBrowser(token);
         } else if (scenario.getSourceTagNames().contains("@employee")) {
-            System.out.println("Logging in as employee");
             String token = authApi.login(
                     ConfigReader.employeeEmail(),
                     ConfigReader.employeePassword()
             );
             context.authenticateBrowser(token);
         }
-        System.out.println("Browser URL: " + context.getDriver().getCurrentUrl());
     }
 
     @After 

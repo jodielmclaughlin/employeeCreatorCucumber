@@ -71,13 +71,10 @@ public class TestContext {
                         "return localStorage.getItem('access_token');"
                 );
 
-        System.out.println("Token stored: " + (storedToken != null));
-        System.out.println("Token length: " +
-                (storedToken == null ? 0 : storedToken.length()));
+
 
         driver.navigate().refresh();
 
-        System.out.println("URL after refresh: " + driver.getCurrentUrl());
     }
 
 }
