@@ -10,3 +10,4 @@ shared\Hooks.class
 pages\EmployeeListPage.class
 steps\EmployeeListSteps.class
 pages\EditEmployeePage.class
+api\AuthApi.class

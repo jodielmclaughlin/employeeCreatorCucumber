@@ -1,7 +1,8 @@
+@admin
 Feature: Employee List
 
   Background:
-    Given user is logged in as an admin and on the employee list page
+    Given user is on the employee list page
 
 
   Scenario: User should be directed to add employee page

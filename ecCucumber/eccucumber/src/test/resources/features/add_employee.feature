@@ -1,7 +1,8 @@
+@admin
 Feature: Add Employee
 
     Background:
-        Given user logged in as admin and is on the add employee page
+        Given user is on the add employee page
 
     Scenario: user tries to add employee unsuccessfully
     When user inputs employee details incorrectly

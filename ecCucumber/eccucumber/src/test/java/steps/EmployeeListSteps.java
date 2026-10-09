@@ -25,15 +25,11 @@ public class EmployeeListSteps {
         this.context =  context;
     }
 
-    @Given("user is logged in as an employee and on the employee list page")
-    public void userIsLoggedInAsAnEmployeeAndOnEmployeeListPage(){
-        employeeListPage = new LoginPage(context.getDriver()).successfullyLoginAsEmployee();
+    @Given("user is on the employee list page")
+    public void userIsOnEmployeeListPage(){
+        employeeListPage = new EmployeeListPage(context.getDriver());
     }
 
-    @Given("user is logged in as an admin and on the employee list page")
-    public void userIsLoggedInAsAnAdminAndOnEmployeeListPage(){
-        employeeListPage = new LoginPage(context.getDriver()).successfullyLoginAsAdmin();
-    }
 
     @Given("a test employee exists")
     public void aTestEmployeeExists() throws Exception {

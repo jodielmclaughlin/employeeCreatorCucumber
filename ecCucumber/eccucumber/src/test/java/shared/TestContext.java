@@ -1,5 +1,6 @@
 package shared;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 import config.ConfigReader;
@@ -13,8 +14,7 @@ public class TestContext {
     private String testEmployeePhoneNumber;
 
     private Long testEditEmployeeId;
-    private String testEditEmployeeEmail;
-    private String testEditEmployeePhoneNumber;
+
 
     public void startDriver(){
         driver = WebDriverFactory.createWebDriver(ConfigReader.browser());
@@ -46,10 +46,6 @@ public class TestContext {
         this.testEmployeeEmail = testEmployeeEmail;
     }
 
-    public String getTestEmployeePhoneNumber() {
-        return testEmployeePhoneNumber;
-    }
-
     public void setTestEmployeePhoneNumber(String testEmployeePhoneNumber) {
         this.testEmployeePhoneNumber = testEmployeePhoneNumber;
     }
@@ -62,19 +58,26 @@ public class TestContext {
         this.testEditEmployeeId = testEmployeeId;
     }
 
-    public String getTestEditEmployeeEmail() {
-        return testEditEmployeeEmail;
+    public void authenticateBrowser(String token) {
+        driver.get(ConfigReader.baseUrl());
+
+        ((JavascriptExecutor) driver).executeScript(
+                "localStorage.setItem('access_token', arguments[0]);",
+                token
+        );
+
+        String storedToken = (String) ((JavascriptExecutor) driver)
+                .executeScript(
+                        "return localStorage.getItem('access_token');"
+                );
+
+        System.out.println("Token stored: " + (storedToken != null));
+        System.out.println("Token length: " +
+                (storedToken == null ? 0 : storedToken.length()));
+
+        driver.navigate().refresh();
+
+        System.out.println("URL after refresh: " + driver.getCurrentUrl());
     }
 
-    public void setTestEditEmployeeEmail(String testEmployeeEmail) {
-        this.testEditEmployeeEmail = testEmployeeEmail;
-    }
-
-    public String getTestEditEmployeePhoneNumber() {
-        return testEditEmployeePhoneNumber;
-    }
-
-    public void setTestEditEmployeePhoneNumber(String testEmployeePhoneNumber) {
-        this.testEditEmployeePhoneNumber = testEmployeePhoneNumber;
-    }
 }

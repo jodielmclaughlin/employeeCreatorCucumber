@@ -1,7 +1,8 @@
+@employee
 Feature: Employee List
 
     Background:
-        Given user is logged in as an employee and on the employee list page
+        Given user is on the employee list page
 
     Scenario: No employees are displayed
     When user logs out

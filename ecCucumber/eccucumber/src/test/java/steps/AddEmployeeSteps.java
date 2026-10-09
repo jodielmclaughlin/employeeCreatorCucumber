@@ -18,11 +18,9 @@ public class AddEmployeeSteps {
         this.context = context;
     }
 
-    @Given("user logged in as admin and is on the add employee page")
+    @Given("user is on the add employee page")
      public void userIsOnTheAddEmployeePage(){
         addEmployeePage = new EmployeeListPage(context.getDriver())
-                .clickLoginButton()
-                .successfullyLoginAsAdmin()
                 .clickAddEmployeeButton();
      }
 

@@ -1,7 +1,7 @@
- Feature: Edit employee
+@admin
+Feature: Edit employee
 
      Background:
-         Given user is logged in as an admin
        Given a test editing employee exists
        Given user is on the edit employee page
 
