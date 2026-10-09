@@ -53,6 +53,8 @@ public class EditEmployeeSteps {
     public void userInputsEditedEmployeeDetailsCorrectly(){
         editEmployeePage.enterStartDate("29-12-2025");
         editEmployeePage.clickSaveChangesButton();
+        System.out.println(
+                "URL after saving edit: " + context.getDriver().getCurrentUrl());
     }
 
     @Then("user should see edited employee on employee list page")
