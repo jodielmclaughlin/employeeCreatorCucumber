@@ -51,7 +51,7 @@ public class EditEmployeeSteps {
 
     @When("user inputs edited employee details correctly")
     public void userInputsEditedEmployeeDetailsCorrectly(){
-        editEmployeePage.enterStartDate("29-12-2025");
+        editEmployeePage.enterStartDate("29-01-2025");
         editEmployeePage.clickSaveChangesButton();
         System.out.println(
                 "URL after saving edit: " + context.getDriver().getCurrentUrl());
