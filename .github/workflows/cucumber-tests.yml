@@ -17,8 +17,8 @@ jobs:
       mysql:
         image: mysql:8.4
         env:
-          MYSQL_ROOT_PASSWORD: ${{ secrets.DB_PASSWORD}}
-          MYSQL_DATABASE: ${{ secrets.DB_TEST_NAME}}
+          MYSQL_ROOT_PASSWORD: rootpassword
+          MYSQL_DATABASE: employeecreator_september26_test
         ports:
           - 3306:3306
         options: >- 
@@ -72,9 +72,9 @@ jobs:
         env:
           SPRING_PROFILES_ACTIVE: test
           SPRING_PROFILE: test
-          SPRING_DATASOURCE_URL: jdbc:mysql://${{secrets.DB_HOST}}:${{secrets.DB_PORT}}/${{secrets.DB_TEST_NAME}}?createDatabaseIfNotExist=true
-          SPRING_DATASOURCE_USERNAME: ${{ secrets.DB_USER}}
-          SPRING_DATASOURCE_PASSWORD: ${{ secrets.DB_PASSWORD}}
+          SPRING_DATASOURCE_URL: jdbc:mysql://127.0.0.1:3306/employeecreator_september26_test
+          SPRING_DATASOURCE_USERNAME: root
+          SPRING_DATASOURCE_PASSWORD: rootpassword
         run: |
             nohup mvn spring-boot:run > /tmp/backend.log 2>&1 &
             
