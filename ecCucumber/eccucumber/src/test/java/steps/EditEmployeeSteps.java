@@ -57,7 +57,7 @@ public class EditEmployeeSteps {
 
     @Then("user should see edited employee on employee list page")
     public void userShouldSeeEditedEmployeeOnEmployeeListPage(){
-        //employeeListPage = new EmployeeListPage(context.getDriver());
+        employeeListPage = new EmployeeListPage(context.getDriver());
         Assert.assertTrue(employeeListPage.getEmployeeDetails(context.getTestEditEmployeeId().intValue()).contains("Edit"));
     }
 
