@@ -54,7 +54,7 @@ public class EditEmployeeSteps {
 
         editEmployeePage.enterLastName("Edited");
         editEmployeePage.clickSaveChangesButton();
-
+        editEmployeePage.waitForUrl("http://localhost:5173/#/");
         System.out.println(
                 "URL after saving edit: " + context.getDriver().getCurrentUrl());
     }

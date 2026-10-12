@@ -26,7 +26,6 @@ public class EditEmployeePage extends BasePage{
 
     public EmployeeListPage clickSaveChangesButton(){
         click(saveChangesButton);
-        waitForUrl("http://localhost:5173/");
         return new EmployeeListPage(driver);
     }
 
