@@ -7,6 +7,9 @@ import config.ConfigReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.logging.LogEntry;
+import org.openqa.selenium.logging.LogType;
 
 public class Hooks {
 
@@ -40,7 +43,31 @@ public class Hooks {
     }
 
     @After 
-    public void teardown() throws Exception {
+    public void teardown(Scenario scenario) throws Exception {
+        WebDriver driver = context.getDriver();
+
+        if (driver != null) {
+            if (scenario.isFailed()) {
+                System.out.println("=== Browser console logs for: "
+                        + scenario.getName() + " ===");
+
+                try {
+                    for (LogEntry entry :
+                            driver.manage().logs().get(LogType.BROWSER).getAll()) {
+                        System.out.println(
+                                entry.getLevel() + ": " + entry.getMessage()
+                        );
+                    }
+                } catch (Exception e) {
+                    System.out.println(
+                            "Could not retrieve browser logs: " + e.getMessage()
+                    );
+                }
+            }
+
+            driver.quit();
+        }
+
         if (context.getTestEmployeeId() != null) {
             employeeApi.deleteEmployee(context.getTestEmployeeId());
             context.setTestEmployeeId(null);
