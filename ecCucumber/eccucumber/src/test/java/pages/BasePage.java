@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -24,6 +25,13 @@ public class BasePage {
     public WebElement waitForVisible(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         
+    }
+
+    public void waitForUrl(String url){
+
+         ExpectedCondition<Boolean> urlIsCorrect = arg -> driver.getCurrentUrl().equals(url);
+         wait.until(urlIsCorrect);
+
     }
 
     public List<WebElement>  checkIfElementIsPresent(By locator){

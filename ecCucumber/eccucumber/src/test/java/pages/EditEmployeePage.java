@@ -13,6 +13,7 @@ public class EditEmployeePage extends BasePage{
     private By startDateError = By.cssSelector("[data-testid='start-date-error']");
     private By firstNameInput = By.cssSelector("[data-testid='first-name-input']");
     private By lastNameInput = By.cssSelector("[data-testid='last-name-input']");
+    private By lastNameError = By.cssSelector("[data-testid='last-name-error']");
     private By emailInput = By.cssSelector("[data-testid='email-input']");
     private By phoneNumberInput = By.cssSelector("[data-testid='phone-number-input']");
     private By addressInput = By.cssSelector("[data-testid='address-input']");
@@ -25,7 +26,13 @@ public class EditEmployeePage extends BasePage{
 
     public EmployeeListPage clickSaveChangesButton(){
         click(saveChangesButton);
+        waitForUrl("http://localhost:5173/");
         return new EmployeeListPage(driver);
+    }
+
+    public void enterLastName(String string){
+        waitForVisible(lastNameInput);
+        type(lastNameInput, string);
     }
 
     public void enterStartDate(String string){
@@ -36,6 +43,12 @@ public class EditEmployeePage extends BasePage{
     public String getStartDateError(){
 
         return textOf(startDateError);
+    }
+
+
+    public String getLastNameError(){
+
+        return textOf(lastNameError);
     }
 
     public List<String> getEmployeeDetails(){
