@@ -42,7 +42,6 @@ public class LoginSteps {
     @Then("user should see employee list page")
     public void userShouldSeeEmployeeListPage(){
         employeeListPage = new EmployeeListPage(context.getDriver());
-        System.out.println(context.getDriver().getCurrentUrl());
         Assert.assertEquals(context.getDriver().getCurrentUrl(), "http://localhost:5173/#/login");
     }
 
